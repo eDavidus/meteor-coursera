@@ -1,0 +1,4 @@
+/* use to put border around things */
+.thin_border {
+    border: 1px solid black;
+}

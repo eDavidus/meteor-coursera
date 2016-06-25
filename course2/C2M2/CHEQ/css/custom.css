@@ -1,0 +1,142 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,100,300);
+
+/* Fonts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1,h2,h3,h4,h5{
+    line-height: 1.2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    font-size: 44px;
+    margin: 0 0 30px 0;
+}
+
+.dark-bg {
+    color: #fff;
+}
+
+.text-align-left{
+	text-align: left;
+}
+
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  padding: 8rem 0 7rem;
+  text-align: center;
+}
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+
+.tasks {
+	background-color: #f8f8f8;
+}
+
+.section-footer{
+	background-color: #919191;
+}
+
+.testimonials{
+	background-color: #252830;
+}
+
+.soc-list{
+	margin: 0;
+    padding: 0px;
+    list-style: none;
+}
+ 
+.soc-list li{
+	display: inline-block;
+    margin: 10px 0;
+}
+
+/* Heading
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.heading {
+  background-image: url('../images/page2_bg.jpg');
+  background-size: cover;
+  color: #fff;
+  padding-bottom: 5rem;
+}
+
+/* Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.navbar {
+	background-color: #202229;
+	margin-bottom: 0px;
+	border-radius: 0px;
+}
+
+.navbar-brand,.navbar-toggle{
+	font-family: 'Roboto', sans-serif;
+	color: #3EAFD9;
+	font-size: 24px;
+}
+
+.navbar-toggle{
+	font-size: 25px;
+	padding: 0px 0px 0px 0px;
+}
+
+.navbar .nav li a {
+    display: block;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+    text-decoration: none;
+    outline: none;
+    background: inherit;
+    color: #3EAFD9;
+}
+
+
+
+/* Tasks
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.task img{
+    height: 40px;
+}
+
+.status{
+	font-size: 30px;
+	width: 10%;
+}
+.status-pending{
+	color: #919191;
+}
+
+.status-complete{
+	color: green;
+}
+
+.task-title{
+	position:relative;
+	text-decoration: none;
+	color: navy;
+}
+
+.task-details{
+	text-align: left;
+	width:80%;
+}
+
+.user-image{
+	width:10%;
+}
+
+.img-small{
+	height: 30px;
+}
+
+.modify-task{
+	padding-top:20px;
+}
+

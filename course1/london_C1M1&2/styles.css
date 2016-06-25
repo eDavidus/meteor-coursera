@@ -1,0 +1,58 @@
+@media (min-width:500px){
+    body {
+        background: red;
+    }
+    
+    .responsive {
+        display: inline-block;
+        width: 240px;
+        border:1px solid black;
+    }
+}
+
+
+@media (min-width:1000px){
+    body {
+        background: green;
+    }
+    .responsive {
+        display: inline-block;
+        width: 450px;
+        border: 1px solid black;
+    }    
+    
+}
+
+
+/*body {
+    background: black;
+    color: white;
+}*/
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    background: white;
+}
+
+.greenlink:hover {
+    color: green;
+    background: gray;
+}
+
+h1 {
+    font-family: "Times new roman", sans-serif;
+    font-size: 50pt;
+}
+
+.indent {
+    margin-left: 10px;
+}
+
+.gap_below {
+    margin-bottom: 35px;
+}

@@ -1,0 +1,20 @@
+
+h1 {
+    /* backgroun light grey */
+    background: #DDDDDD;
+    /* margin on hte left */
+    margin-left: 30px;
+    /* change default font for sans serif */
+    font-family: sans-serif;
+}
+
+#ex {
+    font-family: sans-serif, serif;
+}
+
+
+
+
+
+
+

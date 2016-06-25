@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+    <head>
+ 
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <title>Animals</title>
+        
+        <!-- include our libraries and css files -->
+        
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/handlebars-v3.0.3.js"></script>
+        
+        <script src="js/bootstrap.min.js"></script>
+        <script src="AnimalsData.js"></script>
+        <script src="assignment.js"></script>
+        
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="assignment.css" rel="stylesheet">
+    
+    </head>
+    
+    <body>
+    
+        <div class="container">
+            <div class="page-header">
+                <h1>Animals</h1>
+            </div>
+            
+            <!--navigation tabs-->
+            <ul class="nav nav-tabs">
+                <li class="active" id="category-li"><a href="#" id="category-tab">Categories</a></li>
+                <li id="animals-li"><a href="#" id="animals-tab">Animals</a></li>
+                <li id="animal-li"><a href="#" id="animal-tab">Animal</a></li>
+            </ul>
+            <br/><br/>
+            <!--content in this part-->
+            <div id="content" class="container-fluid" role="main">
+            </div>
+            
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+            
+              <!-- The Close Button -->
+              <span class="close">X</span>
+            
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+            
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+            </div>
+        
+        <!--end of container            -->
+        </div>
+            
+        <!--Templates-->
+        <!--To display all categories-->
+        <script id="category-template" type="text/x-handlebars-template">
+          <div class="row">
+        
+            {{#each category}}
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2"> 
+                <div class="category-thumbnail"  data-id="{{@index}}">
+                  <img class="category-image" src="{{cat_thumbnail}}" alt="{{name}}"/> 
+                  <div class="caption">
+                      <a href="#" id="name"><h4> {{name}} </h4></a>
+                      <p>{{animals.length}} animals</p>
+                  </div>
+                 </div>
+            </div> 
+        
+            {{/each}}
+        
+          </div> 
+        </script>
+        
+        <!--to display one category-->
+        <script id="animals-template" type="text/x-handlebars-template">
+            <div class="row">
+                <h2 class="cat-name">{{name}}</h2>
+                {{#each animals}}
+                <div class="col-xs-9 col-md-3"> 
+                    <div class="animal-thumbnail"  data-id="{{@index}}">
+                        <div class="image-cat">
+                            <img class="crop-img" src="{{image1}}" alt=""/>
+                            <img class="crop-img" src="{{image2}}" alt=""/> 
+                        </div>
+                        <div class="caption">
+                            <h3>{{name}}</h3>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div> 
+        </script>
+        
+        <!--to display one animal-->
+        <script id="animal-template" type="text/x-handlebars-template">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <img class="large-img" data-photo="image1" src="{{image1}}" alt="{{name}}"/>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <img class="large-img" data-photo="image2" src="{{image2}}" alt="{{name}}"/>
+                </div>
+            </div>
+            <div class=row>
+                <div class="col-md-12">
+                    <div class="caption">
+                        <h3>{{name}}</h3>
+                        <p> {{description}}</p>
+                    </div>
+                </div>
+            </div>
+        </script>
+        
+
+        
+    </body>        
+
+
+
+
+</html>

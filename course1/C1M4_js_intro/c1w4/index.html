@@ -1,0 +1,57 @@
+<html>
+	
+	<title> Hostel </title>
+
+    <head>
+
+        <link rel="stylesheet" href="styles.css" type="text/css"/>
+        <link rel="stylesheet" href="bootstrap.css" type="text/css"/>
+
+        <script src="jquery-1.12.4.min.js"></script>
+        <script src="jquery.min.js"></script>
+    	<script src="bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+
+    	<nav class="navbar navbar-default">
+    		<div class="container-fluid">
+  
+      		<!-- start collapsed navbar-->
+      			<div class="navbar-header">
+        			<button 
+        			type="button" 
+        			class="navbar-toggle collapsed" 
+        			data-toggle="collapse" 
+        			data-target="#main_navbar" 
+        			aria-expanded="false">###</button>
+      			</div><!-- / collapsed navbar-->
+
+      			<!-- start un-collapsed navbar-->
+      			<div 
+			         class="collapse navbar-collapse" 
+			         id="main_navbar">
+			        <ul class="nav navbar-nav">
+			          <li class="active"><a href="index.html">Home</a></li>
+			          <li><a href="story.html">Story</a></li>
+			        </ul>
+				</div><!-- / un-collapsed navbar-->
+
+			</div> <!-- /container -->
+		</nav>
+			  
+		<div class="container">
+					  		
+			<p> Hello and welcome to my page on old hostels. Below you can see a picture of an old hostel and if you click on <a href="story.html">Story</a> in the navigation bar it will take you to a short story about hostels</p>
+
+			<h1 class="brave photo_list">Old hostel picture</h1>
+
+			<h2 id="title" onclick="$('#title').html('There are hostels in 145 countries');">Click here to learn more about hostels</h2>
+
+			
+			<img src="Hostel_Old_Image.jpg" alt="Picture of an old hostel">
+			
+		</div>  
+	</body>
+</html>

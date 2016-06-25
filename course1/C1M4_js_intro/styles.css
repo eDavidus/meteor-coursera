@@ -1,0 +1,10 @@
+#number{
+    font-size: 60px;
+    color: red;
+    background: lightgrey;
+    width: 100px;
+    margin-left: 50px;
+    text-align: center;
+    font-family: sans-serif
+ 
+}

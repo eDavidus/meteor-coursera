@@ -1,0 +1,21 @@
+ /* The following code will alter the appearance of the h1-header */
+.brave{ 
+  /* Set the font-size to 40px */ 
+  font-size: 40px;  
+  /* Give the header a 40px padding around it */  
+  padding: 40px;  
+  /* Set the color to red */  
+  color: red; 
+  /* use the font-family sans-serif */  
+  font-family: sans-serif;
+}
+
+body{
+
+}
+
+.photo_list{
+  width:100%;
+  max-height:100px;
+  padding:10px;
+}

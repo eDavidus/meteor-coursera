@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Counter</title>
+		<link rel="stylesheet"
+			  type="text/css"
+			  href="styles.css"
+		      />
+		<script src="jquery-1.12.4.js"></script>
+		
+    </head>
+    <body>
+        <div id="number">
+        </div>
+    </body>
+    <script type="text/javascript">
+        var counter = -1;
+        $("#number").text(counter);
+        
+        $("#number").click(function () {
+            counter ++;
+            $("#number").text(counter);
+        });
+
+    </script>
+</html>

@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*body style*/
+body{
+	margin:0px;
+	padding:0px;
+}
+
+/*Navbar style*/
+#logo{
+	color:#0F69D3;
+	font:bolder;
+	font-size:36px;
+	float:left;
+	padding-top:15px;
+}
+.topnavbar{
+	text-align:end;
+	height:10px;
+	padding-top:0px;
+
+}
+.topnavbar ul{
+	list-style-type:none;
+}
+.topnavbar ul li{
+	display:inline;
+}
+@media (max-width: 480px){
+	#logo{
+		font-size:20px;
+		padding-top:35px;
+	}
+}
+
+/*Home Page Banner style*/
+.main-banner{
+	padding:0px;
+	margin:0px;
+}
+.big-image{
+	max-width:100%;
+	margin-top:0px;
+	background:url(img/image1.jpg) top center fixed;
+}
+#main-banner-text-top{
+	text-align:left;
+	color:white;
+	text-shadow: 2px 2px #000000;
+}
+#main-banner-text-bottom{
+	text-align:left;
+	color:#E8E8E8;
+	text-shadow: 2px 2px #000000;
+}
+@media (max-width: 480px){
+	.big-image{
+		height:300px;
+	}
+	#main-banner-text-top{
+		font-size:32px;
+		padding-top:50px;
+	}
+	#main-banner-text-bottom{
+		font-size:20px;
+		padding-top:20px;
+	}
+}
+@media (min-width: 480px){
+	.big-image{
+		height:400px;
+	}
+	#main-banner-text-top{
+		font-size:43px;
+		padding-top:90px;
+	}
+	#main-banner-text-bottom{
+		font-size:24px;
+		padding-top:30px;
+	}
+}
+@media (min-width: 768px){
+	.big-image{
+		height:480px;
+	}
+	#main-banner-text-top{
+		font-size:52px;
+		padding-top:130px;
+	}
+	#main-banner-text-bottom{
+		font-size:28px;
+		padding-top:35px;
+	}
+}
+@media (min-width: 1200px){
+	.big-image{
+		height:550px;
+	}
+	#main-banner-text-top{
+		font-size:60px;
+		padding-top:150px;
+	}
+	#main-banner-text-bottom{
+		font-size:32px;
+		padding-top:40px;
+	}
+}
+
+/*Style for Small Images in the index.html file*/
+#crop-image-header{
+	text-align:center;
+}
+.crop-image{
+	max-height:90px;
+  	max-width:100%;
+  	margin-top: 10px;
+	margin-bottom: 30px;
+}
+@media (max-width: 480px){
+	#crop-image-header{
+		font-size:18px;
+		text-align:left;
+	}
+}
+@media (min-width: 480px){
+	#crop-image-header{
+		font-size:24px;
+		text-align:left;
+	}
+}
+@media (min-width: 768px){
+	#crop-image-header{
+		font-size:28px;
+		text-align:left;
+	}
+}
+@media (min-width: 1200px){
+	#crop-image-header{
+		font-size:32px;
+		text-align:center;
+	}
+}
+
+/*Style for buttons to navigate throug crop images*/
+#forward{
+	position: absolute;
+    right: 0px;
+    padding: 0px;
+}
+
+#backward{
+	position: absolute;
+	margin-top:100px;
+}
+@media (max-width: 480px){
+	#forward, #backward{
+		margin-top:80px;
+		width: 30px;
+		height:30px;
+	}
+}
+@media (min-width: 480px){
+	#forward, #backward{
+		margin-top:90px;
+		width: 40px;
+		height:40px;
+	}
+}
+@media (min-width: 768px){
+	#forward, #backward{
+		margin-top:80px;
+		width: 50px;
+		height:50px;
+	}
+}
+@media (min-width: 1200px){
+	#forward, #backward{
+		margin-top:100px;
+		width: 50px;
+		height:50px;
+	}
+}
+
+
+
+
+
+
+

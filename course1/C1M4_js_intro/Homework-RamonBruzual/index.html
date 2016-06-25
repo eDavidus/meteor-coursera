@@ -1,0 +1,125 @@
+<!doctype html>
+<!-- index html file -->
+<html>
+	<!-- links to jQuery, Bootstrap and Own style sheet -->
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link href="bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="jquery-1.12.4.js"></script>
+    
+    <!-- Head metadata -->
+    <head>
+    	<title>Ramon Bruzual | Main Site </title>
+        <meta name="description" content="Homework for Coursera Course">
+    </head>
+    
+    <body>
+    	<!-- Top navigation bar -->
+        <div class="container">
+        	<div id="logo">Ramon Bruzual</div>
+            <div class="page-header">
+                <div class="topnavbar">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                            &nbsp;
+                            &nbsp;
+                        </li>
+                        <li>
+                            <a href="about.html">About me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Main Banner -->
+		<div class="main-banner">
+        	<div class="big-image">
+				<div class="container">
+                	<h1 id="main-banner-text-top">Just a test</h1>
+                    <h1 id="main-banner-text-bottom">Welcome to Dubai!</h1>
+                    <!-- Buttons -->
+                    <div class="col-md-6">
+                		<button id="backward">&lt;</button>
+                	</div>
+                	<div class="col-md-6">
+                		<button id="forward">&gt;</button>
+                	</div>
+                </div>
+            </div>
+        </div>
+        <!-- Crop Images -->
+        <div class="container">
+        	<h2 id="crop-image-header">Welcome! Try clicking the following images:</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="crop-image" id="image1" src="img/image1.jpg" alt="Welcome to Dubai!">
+                </div>
+                <div class="col-md-4">
+                    <img class="crop-image" id="image2" src="img/image2.jpg" alt="Some Videogame!">
+                </div>
+                <div class="col-md-4">
+                    <img class="crop-image" id="image3" src="img/image3.jpg" alt="Xmen-Nice Movie!">
+                </div>
+            </div>
+            <!-- Paragraphs added just to be able to scroll down -->
+            <p style="margin-top:80px"> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down
+        	<br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down 
+            <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down 
+            <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down 
+            <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down 
+            <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down 
+            <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down 
+            <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down 
+            <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down 
+            <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down 
+            <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down 
+            <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down 
+            <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down 
+            <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down 
+            <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down 
+            <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down <br> Paragraphs added just to be able to scroll down 
+        	</p>
+        </div>
+		<!-- JavaScript -->
+        <script>
+			var paused = false;
+			var button = false;
+			var counter = 1;
+			//Function to change the Main Banner image to whatever crop image was clicked
+			$(".crop-image").click(function(){
+				$(".big-image").css("background","url("+$(this).attr('src')+") top center fixed");
+				$("#main-banner-text-bottom").html($(this).attr('alt'));
+				counter=parseInt($(this).attr('id').slice(-1));
+			});
+			//$("#image"+counter).click();
+			//Function for buttons
+			$(".big-image").click(function(){
+				if (!button){
+					paused=!paused;
+				}
+				button=false;
+			});
+			$("#forward").click(function(){
+				counter=counter+1;
+				button=true;
+				if(counter>3){
+					counter=1;
+				}
+				$("#image"+counter).click();
+			});
+			$("#backward").click(function(){
+				counter=counter-1;
+				button=true;
+				if(counter<1){
+					counter=3;
+				}
+				$("#image"+counter).click();
+			});
+			setInterval(function(){
+				if(!paused){
+					$("#forward").click();
+				}
+			},3000);
+        </script>
+    </body>
+</html>

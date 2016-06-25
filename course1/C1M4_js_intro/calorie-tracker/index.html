@@ -1,0 +1,99 @@
+<html>
+  <head>
+  	<title>Daily Calorie Tracker</title>
+
+  	<!-- import bootstrap -->
+  	<link rel="stylesheet"
+  		  	type="text/css"
+  		  	href="bootstrap.css"
+  	      />
+
+  	<!-- import our own stylesheet -->
+  	<link rel="stylesheet"
+  			  type="text/css"
+  			  href="styles.css"
+  	      />
+
+  	<!-- import jQuery -->
+  	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="page-header">
+        <a class="navbar-brand">
+          <img alt="brand" class="img-rounded" src="./scale.jpg">
+        </a>
+        <h1>Calorie Tracker <small>Keep track of your calories</small></h1>
+      </div>
+
+      <div class="well">
+        <div id="limit" class="row">
+          <div class="col-md-6 col-sm-7 col-xs-12">
+            Daily Limit
+          </div>
+
+          <button id="dec-limit" class="col-md-1 col-sm-1 col-xs-4 btn-default">-</button>
+          <div id="limit-counter"class="col-md-4 col-sm-3 col-xs-4"></div>
+          <button id="inc-limit" class="col-md-1 col-sm-1 col-xs-4 btn-default">+</button>
+        </div>
+      </div>
+
+      <div class="well">
+        <div class="row consumption">
+          <div class="col-md-6 col-sm-7 col-xs-12">
+            Breakfast
+          </div>
+
+            <button id="dec-breakfast" class="col-md-1 col-sm-1 col-xs-4 btn-default">-</button>
+            <div id="breakfast-counter"class="col-md-4 col-sm-3 col-xs-4"></div>
+            <button id="inc-breakfast" class="col-md-1 col-sm-1 col-xs-4 btn-default">+</button>
+        </div>
+
+        <div class="row consumption">
+          <div class="col-md-6 col-sm-7 col-xs-12">
+            Lunch
+          </div>
+
+          <button id="dec-lunch" class="col-md-1 col-sm-1 col-xs-4 btn-default">-</button>
+          <div id="lunch-counter"class="col-md-4 col-sm-3 col-xs-4"></div>
+          <button id="inc-lunch" class="col-md-1 col-sm-1 col-xs-4 btn-default">+</button>
+        </div>
+
+        <div class="row consumption">
+          <div class="col-md-6 col-sm-7 col-xs-12">
+            Dinner
+          </div>
+
+          <button id="dec-dinner" class="col-md-1 col-sm-1 col-xs-4 btn-default">-</button>
+          <div id="dinner-counter"class="col-md-4 col-sm-3 col-xs-4"></div>
+          <button id="inc-dinner" class="col-md-1 col-sm-1 col-xs-4 btn-default">+</button>
+        </div>
+      </div>
+
+      <div class="well">
+        <div class="row exercise">
+          <div class="col-md-6 col-sm-7 col-xs-12">
+            Exercise
+          </div>
+
+          <button id="dec-exercise" class="col-md-1 col-sm-1 col-xs-4 btn-default">-</button>
+          <div id="exercise-counter"class="col-md-4 col-sm-3 col-xs-4"></div>
+          <button id="inc-exercise" class="col-md-1 col-sm-1 col-xs-4 btn-default">+</button>
+        </div>
+      </div>
+
+      <div class="well">
+        <div id="remaining" class="row">
+          <div class="col-md-6 col-sm-7 col-xs-12">
+            Remaining Calorie
+          </div>
+
+          <div id="remaining-counter" class="col-md-6 col-sm-5"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Intro</title>
+        
+        <script src="jquery-1.12.4.js"></script>
+    </head>
+    <body>
+
+        <h1 id="title2" onclick="sayGoodbye();">
+            Hello 2
+        </h1>
+    </body>
+    <script type="text/javascript">
+
+        
+        function sayGoodbye() {
+            console.log("first function");
+            $("#title2").html('Goodbye');
+            $("#title2").click(function () {
+                console.log("inside function");
+                $("#title2").html("Hello");
+                $("#title2").off("click");
+            });
+        }
+    </script>
+</html>
